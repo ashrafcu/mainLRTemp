@@ -9,7 +9,7 @@
     {{-- theme meta --}}
     <meta name="theme-name" content="quixlab" />
   
-    <title>Ashraf Ahmed | Main Template</title>
+    <title>Nodi Thai Aluminium | Administration Panel </title>
     {{-- Favicon icon --}}
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets/images')}}/favicon.png">
     {{-- Pignose Calender --}}
@@ -24,7 +24,7 @@
 
 <body>
 
-    {{--PRELOADER STARTS--}}
+    {{--PRE-LOADER STARTS--}}
     <div id="preloader">
         <div class="loader">
             <svg class="circular" viewBox="25 25 50 50">
@@ -32,14 +32,10 @@
             </svg>
         </div>
     </div>
-    {{--*******************
-        Preloader end
-    ********************--}}
+    {{--PRE-LOADER ENDS--}}
 
     
-    {{--**********************************
-        Main wrapper start
-    ***********************************--}}
+    {{--MAIN WRAPPER STARTS--}}
     <div id="main-wrapper">
 
         {{--TOP NAVIGATION STARTS--}}
@@ -62,34 +58,30 @@
         @include('components.footer')
         {{--FOOTER ENDS--}}
     </div>
-    {{--**********************************
-        Main wrapper end
-    ***********************************--}}
+    {{--MAIN WRAPPER ENDS--}}
 
-    {{--**********************************
-        Scripts
-    ***********************************--}}
+    {{--SCRIPTS--}}
     <script src="{{asset('assets/plugins')}}/common/common.min.js"></script>
     <script src="{{asset('assets/js')}}/custom.min.js"></script>
     <script src="{{asset('assets/js')}}/settings.js"></script>
     <script src="{{asset('assets/js')}}/gleek.js"></script>
     <script src="{{asset('assets/js')}}/styleSwitcher.js"></script>
 
-    {{-- Chartjs --}}
+    {{-- CHART JS --}}
     <script src="{{asset('assets/plugins')}}/chart.js/Chart.bundle.min.js"></script>
-    {{-- Circle progress --}}
+    {{-- CIRCLE PROGRESS --}}
     <script src="{{asset('assets/plugins')}}/circle-progress/circle-progress.min.js"></script>
-    {{-- Datamap --}}
+    {{-- DATA MAP --}}
     <script src="{{asset('assets/plugins')}}/d3v3/index.js"></script>
     <script src="{{asset('assets/plugins')}}/topojson/topojson.min.js"></script>
     <script src="{{asset('assets/plugins')}}/datamaps/datamaps.world.min.js"></script>
-    {{-- Morrisjs --}}
+    {{-- MORRIS JS --}}
     <script src="{{asset('assets/plugins')}}/raphael/raphael.min.js"></script>
     <script src="{{asset('assets/plugins')}}/morris/morris.min.js"></script>
-    {{-- Pignose Calender --}}
+    {{-- PIGNOSE CALENDER --}}
     <script src="{{asset('assets/plugins')}}/moment/moment.min.js"></script>
     <script src="{{asset('assets/plugins')}}/pg-calendar/js/pignose.calendar.min.js"></script>
-    {{-- ChartistJS --}}
+    {{-- CHARTIST JS --}}
     <script src="{{asset('assets/plugins')}}/chartist/js/chartist.min.js"></script>
     <script src="{{asset('assets/plugins')}}/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
 

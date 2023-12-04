@@ -7,8 +7,8 @@
                     <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="./index.html">Home 1</a></li>
-                    {{-- <li><a href="./index-2.html">Home 2</a></li> --}}
+                    <li><a href="{{route('home')}}">Home</a></li>
+                    <li><a href="{{route('task.list')}}">Tasks</a></li>
                 </ul>
             </li>
             <li class="mega-menu mega-menu-sm">
@@ -31,6 +31,18 @@
                 </ul>
             </li>
             <li class="nav-label">Apps</li>
+            <li>
+                <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                    <i class="icon-grid menu-icon"></i> <span class="nav-text">Tasks</span>
+                </a>
+                {{--TASK MENU STARTS--}}
+                <ul aria-expanded="false">
+                    <li><a href="{{route('task.list')}}">All Tasks</a></li>
+                    <li><a href="./email-read.html">Pending Tasks</a></li>
+                    <li><a href="./email-compose.html">Completed Tasks</a></li>
+                </ul>
+                {{--TASK MENU ENDS--}}
+            </li>
             <li>
                 <a class="has-arrow" href="javascript:void()" aria-expanded="false">
                     <i class="icon-envelope menu-icon"></i> <span class="nav-text">Email</span>

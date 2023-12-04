@@ -15,5 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 //==Dashboard Routes==//
+Route::group(['prefix'=>'admin'], function(){
+    Route::get('/home', [DashboardController::class, 'showHome'])->name('home');
+    Route::get('/tasks', [DashboardController::class, 'showTaskList'])->name('task.list');
+});
 
-Route::get('/home', [DashboardController::class, 'home'])->name('home');
+
