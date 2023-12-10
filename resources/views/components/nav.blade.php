@@ -9,6 +9,7 @@
                 <ul aria-expanded="false">
                     <li><a href="{{route('home')}}">Home</a></li>
                     <li><a href="{{route('task.list')}}">Tasks</a></li>
+                    <li><a href="{{route('image.upload')}}">Upload File</a></li>
                 </ul>
             </li>
             <li class="mega-menu mega-menu-sm">

@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ImageController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 Route::group(['prefix'=>'admin'], function(){
     Route::get('/home', [DashboardController::class, 'showHome'])->name('home');
     Route::get('/tasks', [DashboardController::class, 'showTaskList'])->name('task.list');
+    Route::get('/image', [ImageController::class, 'uploadImage'])->name('image.upload');
+    Route::post('/image', [ImageController::class, 'uploadSingleImage'])->name('image.upload');
 });
 
 
